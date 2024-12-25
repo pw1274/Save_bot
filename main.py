@@ -7,17 +7,17 @@ import time
 import os
 import threading
 
-bot_token = os.environ.get("TOKEN", "") 
-api_hash = os.environ.get("HASH", "") 
-api_id = os.environ.get("ID", "")
-ss = os.environ.get("STRING", "")
+bot_token = os.environ.get("TOKEN", "7574020226:AAGDGo4G81H8aqAfHAIFkELVW_PHCD_0Lws") 
+api_hash = os.environ.get("HASH", "23728809") 
+api_id = os.environ.get("ID", "5d7165501181e2ef8000f333fe529678")
+ss = os.environ.get("STRING", "555555555")
 bot = Client("mybot",api_id=api_id,api_hash=api_hash,bot_token=bot_token)
 acc = Client("myacc",api_id=api_id,api_hash=api_hash,session_string=ss)
 
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
- editable = await m.reply_text("**I am a simple save restricted bot**.\n\nSend message link to clone/download here\n Must join:- @Bypass_restricted")
+ editable = await m.reply_text("**I am a simple save restricted bot**.\n\nSend message link to clone/download here\n Must join:- @Sb_BKUP")
 @bot.on_message(filters.command(["bulk"]))
 async def account_login(bot: Client, m: Message):
  editable = await m.reply_text("**I am not an advanced bot")
